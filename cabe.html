@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PadiTani | Budidaya Cabe Modern</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+
+    <nav class="navbar">
+
+      <div class="logo">
+        <i class="fas fa-pepper-hot"></i>
+        <a href="index.html">PadiTani</a>
+      </div>
+
+      <!-- MENU -->
+      <ul class="nav-menu" id="navMenu">
+
+        <li><a href="index.html">Budidaya Padi</a></li>
+        <li><a href="cabe.html">Budidaya Cabe</a></li>
+        <li><a href="#kalkulator">Kalkulator</a></li>
+        <li><a href="#pemupukan">Pemupukan</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#sumber">Referensi</a></li>
+
+      </ul>
+
+      <!-- BUTTON HAMBURGER -->
+      <button class="mobile-menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero2">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>🌶️ Cabe</h1>
+
+      <h2>Panduan Budidaya Cabe Modern</h2>
+
+      <p>
+
+        Website edukasi budidaya cabe yang membahas teknik budidaya
+        mulai dari persiapan lahan, pembibitan, penanaman,
+        pemupukan, pengendalian OPT,
+        hingga panen dan pasca panen.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <div class="hero-buttons">
+
+          <div class="dropdown">
+
+            <button class="btn-primary dropdown-btn">
+              🌱 Pilih Komoditas
+              <i class="fas fa-chevron-down"></i>
+            </button>
+
+            <div class="dropdown-content">
+
+              <a href="index.html">
+                🌾 Budidaya Padi
+              </a>
+
+              <a href="cabe.html">
+                🌶️ Budidaya Cabe
+              </a>
+
+            </div>
+
+          </div>
+
+          <button onclick="openAI()" class="btn-secondary">
+            <i class="fas fa-robot"></i>
+            Tanya Penyuluh AI
+          </button>
+
+        </div>
+
+        <div class="hero-badge">
+
+          <p>
+            🌶️ Komoditas Hortikultura
+          </p>
+
+          <h3>Produktivitas 12–20 Ton/Hektar</h3>
+
+          <p>
+
+            Dengan teknik budidaya yang tepat,
+            cabe mampu memberikan keuntungan
+            yang tinggi bagi petani.
+
+          </p>
+
+        </div>
+
+      </div>
+
+  </section>
+
+  <!-- ================= STATISTIK ================= -->
+
+  <section class="stats">
+
+    <div class="stat-card">
+
+      <h3>11+</h3>
+
+      <p>Tahapan Budidaya</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h3>20 Ton</h3>
+
+      <p>Potensi Panen / Ha</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h3>120 Hari</h3>
+
+      <p>Rata-rata Umur Panen</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h3>24/7</h3>
+
+      <p>Penyuluh AI</p>
+
+    </div>
+
+  </section>
+
+  <!-- ================= BUDIDAYA ================= -->
+
+  <section id="budidaya" class="section">
+
+    <div class="section-header">
+
+      <h2>
+        Budidaya Cabe Lengkap
+      </h2>
+
+      <p>
+
+        Panduan budidaya cabe berdasarkan
+        Good Agricultural Practices (GAP).
+
+      </p>
+
+    </div>
+
+    <div class="timeline">
+
+      <!-- 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-tractor"></i></div>
+        <div class="timeline-content">
+          <h3>1. Persiapan Lahan</h3>
+          <p>Tanah dicangkul atau dibajak sedalam 20–30 cm, dibuat bedengan lebar ±100–120 cm, drainase baik, dan diberi kapur/dolomit jika pH rendah.</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-flask"></i></div>
+        <div class="timeline-content">
+          <h3>2. Pemupukan Dasar</h3>
+          <p>Gunakan pupuk kandang matang 10–20 ton/ha + NPK dasar + SP-36 untuk meningkatkan kesuburan awal tanah.</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-seedling"></i></div>
+        <div class="timeline-content">
+          <h3>3. Persemaian Benih</h3>
+          <p>Benih direndam 6–12 jam, disemai di tray atau bedengan semai steril, bibit siap pindah tanam umur 21–30 hari.</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-leaf"></i></div>
+        <div class="timeline-content">
+          <h3>4. Pindah Tanam</h3>
+          <p>Tanam pada sore hari, jarak 50 × 60 cm, gunakan mulsa plastik untuk menjaga kelembaban dan menekan gulma.</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-water"></i></div>
+        <div class="timeline-content">
+          <h3>5. Pengairan</h3>
+          <p>Siram rutin 1–2 kali sehari pada awal tanam, hindari genangan, dan jaga kelembaban stabil.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-spray-can"></i></div>
+        <div class="timeline-content">
+          <h3>6. Pemupukan Susulan</h3>
+          <p>Berikan NPK bertahap (2, 4, dan 6 minggu setelah tanam) serta tambahan KCl untuk kualitas buah.</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-cut"></i></div>
+        <div class="timeline-content">
+          <h3>7. Pemangkasan & Perawatan</h3>
+          <p>Buang tunas bawah (cabang Y), pasang ajir, dan lakukan pengikatan agar tanaman tidak roboh.</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-bug"></i></div>
+        <div class="timeline-content">
+          <h3>8. Pengendalian Hama & Penyakit</h3>
+          <p>Waspadai trips, kutu daun, antraknosa, dan layu fusarium. Gunakan pestisida nabati atau kimia secara bijak (PHT).</p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-seedling"></i></div>
+        <div class="timeline-content">
+          <h3>9. Penyiangan & Perawatan Gulma</h3>
+          <p>Lakukan penyiangan rutin setiap 2–3 minggu agar nutrisi tidak tersaingi gulma.</p>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-pepper-hot"></i></div>
+        <div class="timeline-content">
+          <h3>10. Panen</h3>
+          <p>Panen pertama umur 70–90 HST, dilakukan bertahap setiap 3–7 hari sesuai tingkat kematangan buah.</p>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-warehouse"></i></div>
+        <div class="timeline-content">
+          <h3>11. Pasca Panen</h3>
+          <p>Sortasi buah, pembersihan, pengemasan, dan penyimpanan di tempat sejuk untuk menjaga kesegaran.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <section id="kalkulator" class="section calculator">
+
+      <h2>Kalkulator Kebutuhan Benih &amp; Pupuk</h2>
+
+      <div class="calculator-box">
+
+        <label>Luas Lahan (Hektar)</label>
+
+        <input type="number" id="luasLahan" placeholder="Contoh: 1" step="0.1">
+
+        <button onclick="hitungKebutuhan()">
+          Hitung Kebutuhan
+        </button>
+
+        <div id="hasilKalkulator"></div>
+
+      </div>
+
+    </section>
+    <!-- ================= PEMUPUKAN ================= -->
+    <section id="pemupukan" class="section">
+
+      <h2>Pemupukan Berimbang Budidaya Cabai</h2>
+
+      <table class="fertilizer-table">
+
+        <thead>
+          <tr>
+            <th>Umur Tanaman</th>
+            <th>Jenis Pupuk</th>
+            <th>Dosis / Ha</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Pra Tanam</td>
+            <td>Pupuk Organik (Kompos/Kandang)</td>
+            <td>10–20 Ton</td>
+          </tr>
+
+          <tr>
+            <td>7 HST</td>
+            <td>NPK Dasar</td>
+            <td>150–200 Kg</td>
+          </tr>
+
+          <tr>
+            <td>14 HST</td>
+            <td>Urea</td>
+            <td>100 Kg</td>
+          </tr>
+
+          <tr>
+            <td>30 HST</td>
+            <td>NPK + KCl</td>
+            <td>150 Kg + 100 Kg</td>
+          </tr>
+
+          <tr>
+            <td>45 HST</td>
+            <td>KNO₃ / KCl Susulan</td>
+            <td>100 Kg</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+    <!-- AI BUTTON -->
+    <div class="ai-floating-btn" onclick="openAI()">
+      <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI MODAL -->
+    <div class="ai-modal" id="aiModal">
+
+      <div class="ai-content">
+
+        <div class="ai-header">
+          <h3>🌶️ Penyuluh AI Cabai</h3>
+          <button onclick="closeAI()">✕</button>
+        </div>
+
+        <div id="chatMessages" class="chat-messages">
+
+          <div class="bot-message">
+            Halo, saya Penyuluh AI Cabai 🌶️
+            Tanyakan tentang pupuk, hama (thrips, kutu daun), penyakit, atau panen cabai.
+          </div>
+
+        </div>
+
+        <div class="chat-input">
+
+          <input type="text" id="userQuestion" placeholder="Tulis pertanyaan tentang cabai...">
+
+          <button onclick="sendQuestion()">
+            Kirim
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= AI CHAT ================= -->
+    <!-- AI BUTTON -->
+    <div class="ai-floating-btn" onclick="openAI()">
+      <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI MODAL -->
+    <div class="ai-modal" id="aiModal">
+
+      <div class="ai-content">
+
+        <div class="ai-header">
+          <h3>🌶️ Penyuluh AI Cabai</h3>
+          <button onclick="closeAI()">✕</button>
+        </div>
+
+        <div id="chatMessages" class="chat-messages">
+
+          <div class="bot-message">
+            Halo, saya Penyuluh AI Cabai 🌶️
+            Tanyakan tentang pupuk, hama (thrips, kutu daun), penyakit, atau panen cabai.
+          </div>
+
+        </div>
+
+        <div class="chat-input">
+
+          <input type="text" id="userQuestion" placeholder="Tulis pertanyaan tentang cabai...">
+
+          <button onclick="sendQuestion()">
+            Kirim
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+      <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>PadiTani</h2>
+          <p>Platform Digital Budidaya Padi Modern berbasis teknologi dan informasi pertanian berkelanjutan.</p>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Credit -->
+        <div class="footer-credit">
+          <h3>Dikembangkan Oleh</h3>
+          <h2 class="name">Aisyah Nuraini Nugrahaning Dwi</h2>
+
+          <p>
+            Mahasiswa Program Studi <br>
+            <strong>Penyuluhan Pertanian Berkelanjutan</strong>
+          </p>
+
+          <p>
+            Politeknik Pembangunan Pertanian<br>
+            Yogyakarta–Magelang
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PadiTani — All Rights Reserved</p>
+      </div>
+
+    </footer>
+    <script>
+      function hitungKebutuhan() {
+
+        const luas = parseFloat(document.getElementById("luasLahan").value);
+        const hasil = document.getElementById("hasilKalkulator");
+
+        if (isNaN(luas) || luas <= 0) {
+          hasil.innerHTML = "⚠️ Masukkan luas lahan yang valid!";
+          return;
+        }
+
+        // ================= CABAI ONLY =================
+
+        // standar rata-rata budidaya cabai per hektar
+        const benih = luas * 0.4; // kg/ha
+        const organik = luas * 15000; // kg/ha (15 ton)
+        const npk = luas * 250; // kg/ha
+        const urea = luas * 100; // kg/ha
+        const kcl = luas * 100; // kg/ha
+
+        hasil.innerHTML = `
+    🌶️ <b>Hasil Kebutuhan Cabai (${luas} Ha)</b><br><br>
+
+    🌱 Benih: <b>${benih.toFixed(2)} kg</b><br>
+    🌿 Pupuk Organik: <b>${(organik/1000).toFixed(2)} ton</b><br>
+    🧪 NPK: <b>${npk.toFixed(1)} kg</b><br>
+    🧪 Urea: <b>${urea.toFixed(1)} kg</b><br>
+    ⚡ KCl: <b>${kcl.toFixed(1)} kg</b><br><br>
+
+    📌 <i>Estimasi ini untuk budidaya cabai intensif skala lapang.</i>
+  `;
+      }
+    </script>
+    <script>
+      function openAI() {
+        document.getElementById("aiModal").style.display = "flex";
+      }
+
+      function closeAI() {
+        document.getElementById("aiModal").style.display = "none";
+      }
+
+      function sendQuestion() {
+        const input = document.getElementById("userQuestion");
+        const chat = document.getElementById("chatMessages");
+
+        const text = input.value.trim();
+
+        if (text === "") return;
+
+        chat.innerHTML += `<div class="user-message">${text}</div>`;
+
+        let response = getAIResponseCabai(text.toLowerCase());
+
+        setTimeout(() => {
+          chat.innerHTML += `<div class="bot-message">${response}</div>`;
+          chat.scrollTop = chat.scrollHeight;
+        }, 500);
+
+        input.value = "";
+      }
+
+      // ===== AI CABAI =====
+      function getAIResponseCabai(q) {
+
+        if (q.includes("thrips")) {
+          return "🐛 Thrips dapat dikendalikan dengan insektisida nabati atau musuh alami seperti predator Orius.";
+        }
+
+        if (q.includes("kutu")) {
+          return "🐞 Kutu daun dapat menyebabkan daun keriting. Gunakan PHT atau pestisida selektif.";
+        }
+
+        if (q.includes("pupuk")) {
+          return "🌱 Cabai membutuhkan NPK tinggi + KCl untuk pembentukan buah maksimal.";
+        }
+
+        if (q.includes("panen")) {
+          return "🌶️ Panen cabai dilakukan saat buah merah 60–80% untuk hasil optimal.";
+        }
+
+        if (q.includes("busuk")) {
+          return "🦠 Busuk buah biasanya akibat jamur antraknosa. Hindari kelembaban tinggi.";
+        }
+
+        return "🤖 Tanyakan tentang pupuk, thrips, kutu daun, penyakit, atau panen cabai.";
+      }
+
+      // ENTER
+      document.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+          sendQuestion();
+        }
+      });
+    </script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navMenu");
+        menu.classList.toggle("active");
+      }
+    </script>
+</body>
+
+</html>

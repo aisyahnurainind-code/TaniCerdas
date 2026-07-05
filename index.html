@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PadiTani | Platform Digital Budidaya Padi Modern</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+
+    <nav class="navbar">
+
+      <div class="logo">
+        <i class="fas fa-pepper-hot"></i>
+        <a href="index.html">PadiTani</a>
+      </div>
+
+      <!-- MENU -->
+      <ul class="nav-menu" id="navMenu">
+
+        <li><a href="index.html">Budidaya Padi</a></li>
+        <li><a href="cabe.html">Budidaya Cabe</a></li>
+        <li><a href="#kalkulator">Kalkulator</a></li>
+        <li><a href="#pemupukan">Pemupukan</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#sumber">Referensi</a></li>
+
+      </ul>
+
+      <!-- BUTTON HAMBURGER -->
+      <button class="mobile-menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </nav>
+
+  </header>
+  <!-- ================= HERO ================= -->
+
+  <section class="hero1">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>🌾 Padi</h1>
+
+      <h2>Panduan Budidaya Cabe Modern</h2>
+
+      <p>
+
+        Website edukasi budidaya cabe yang membahas teknik budidaya
+        mulai dari persiapan lahan, pembibitan, penanaman,
+        pemupukan, pengendalian OPT,
+        hingga panen dan pasca panen.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <div class="hero-buttons">
+
+          <div class="dropdown">
+
+            <button class="btn-primary dropdown-btn">
+              🌱 Pilih Komoditas
+              <i class="fas fa-chevron-down"></i>
+            </button>
+
+            <div class="dropdown-content">
+
+              <a href="index.html">
+                🌾 Budidaya Padi
+              </a>
+
+              <a href="cabe.html">
+                🌶️ Budidaya Cabe
+              </a>
+
+            </div>
+
+          </div>
+
+          <button onclick="openAI()" class="btn-secondary">
+            <i class="fas fa-robot"></i>
+            Tanya Penyuluh AI
+          </button>
+
+        </div>
+
+        <div class="hero-badge">
+
+          <p>
+            🌶️ Komoditas Hortikultura
+          </p>
+
+          <h3>Produktivitas 12–20 Ton/Hektar</h3>
+
+          <p>
+
+            Dengan teknik budidaya yang tepat,
+            cabe mampu memberikan keuntungan
+            yang tinggi bagi petani.
+
+          </p>
+
+        </div>
+
+      </div>
+
+  </section>
+  <!-- ================= STATISTIK ================= -->
+  <section class="stats">
+
+    <div class="stat-card show">
+      <h3>11+</h3>
+      <p>Tahapan Budidaya</p>
+    </div>
+
+    <div class="stat-card show">
+      <h3>24/7</h3>
+      <p>Tanya Penyuluh AI</p>
+    </div>
+
+    <div class="stat-card show">
+      <h3>100%</h3>
+      <p>Gratis</p>
+    </div>
+
+    <div class="stat-card show">
+      <h3>Modern</h3>
+      <p>Berbasis Teknologi</p>
+    </div>
+
+  </section>
+
+  <!-- ================= BUDIDAYA ================= -->
+  <section id="budidaya" class="section">
+
+    <div class="section-header">
+      <h2>Budidaya Padi Lengkap</h2>
+      <p>Panduan budidaya padi berdasarkan sumber resmi dan terpercaya.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-tractor"></i></div>
+        <div class="timeline-content">
+          <h3>1. Persiapan Lahan</h3>
+          <p>Sanitasi sawah, pembajakan 15–20 cm, pengeringan 7–14 hari, lalu penggaruan hingga tanah menjadi lumpur homogen dan rata.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-flask"></i></div>
+        <div class="timeline-content">
+          <h3>2. Pemupukan Dasar</h3>
+          <p>Pupuk organik 2–5 ton/ha + SP-36 ±100 kg/ha untuk meningkatkan kesuburan dan pertumbuhan akar awal.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-seedling"></i></div>
+        <div class="timeline-content">
+          <h3>3. Pemilihan Benih</h3>
+          <p>Gunakan benih bersertifikat (Inpari/Ciherang), lakukan uji apung untuk memilih benih bernas.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-leaf"></i></div>
+        <div class="timeline-content">
+          <h3>4. Penyemaian</h3>
+          <p>Rendam 24 jam, peram 24–48 jam, semai merata, bibit siap tanam umur 18–21 hari.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-ruler-combined"></i></div>
+        <div class="timeline-content">
+          <h3>5. Penanaman</h3>
+          <p>Sistem Jajar Legowo 2:1, 1–3 bibit/lubang, tanam dangkal 1–2 cm untuk pertumbuhan optimal.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-water"></i></div>
+        <div class="timeline-content">
+          <h3>6. Pengairan</h3>
+          <p>Sistem intermiten 2–5 cm, keringkan saat fase anakan, airkan kembali saat primordia.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-spray-can"></i></div>
+        <div class="timeline-content">
+          <h3>7. Pemupukan Susulan</h3>
+          <p>Urea + NPK bertahap, KCl saat pengisian bulir untuk kualitas gabah lebih baik.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-bug"></i></div>
+        <div class="timeline-content">
+          <h3>8. Pengendalian Hama</h3>
+          <p>PHT: Beauveria, Metarhizium, burung hantu untuk tikus, dan kontrol nitrogen berlebih.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-scissors"></i></div>
+        <div class="timeline-content">
+          <h3>9. Penyiangan</h3>
+          <p>Penyiangan 2–3 kali, penyulaman maksimal 14 HST, gunakan alat mekanis.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-wheat-awn"></i></div>
+        <div class="timeline-content">
+          <h3>10. Panen</h3>
+          <p>90–95% malai menguning, kadar air 20–25%, panen dengan sabit atau combine harvester.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-warehouse"></i></div>
+        <div class="timeline-content">
+          <h3>11. Pasca Panen</h3>
+          <p>Perontokan cepat, pengeringan hingga 14% KA, penyimpanan gudang kering dan bersih.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= KALKULATOR ================= -->
+  <section id="kalkulator" class="section calculator">
+
+    <h2>Kalkulator Kebutuhan Benih &amp; Pupuk</h2>
+
+    <div class="calculator-box">
+
+      <label>Luas Lahan (Hektar)</label>
+
+      <input type="number" id="luasLahan" placeholder="Contoh: 1" step="0.1">
+
+      <button onclick="hitungKebutuhan()">
+        Hitung Kebutuhan
+      </button>
+
+      <div id="hasilKalkulator"></div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PEMUPUKAN ================= -->
+  <section id="pemupukan" class="section">
+
+    <h2>Pemupukan Berimbang dan Organik</h2>
+
+    <table class="fertilizer-table">
+
+      <thead>
+        <tr>
+          <th>Umur Tanaman</th>
+          <th>Jenis Pupuk</th>
+          <th>Dosis / Ha</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Pra Tanam</td>
+          <td>Pupuk Organik</td>
+          <td>5-10 Ton</td>
+        </tr>
+
+        <tr>
+          <td>0 HST</td>
+          <td>SP-36</td>
+          <td>100 Kg</td>
+        </tr>
+
+        <tr>
+          <td>15 HST</td>
+          <td>Urea</td>
+          <td>100 Kg</td>
+        </tr>
+
+        <tr>
+          <td>30 HST</td>
+          <td>Urea + NPK</td>
+          <td>150 Kg + 150 Kg</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </section>
+
+  <!-- ================= VIDEO ================= -->
+  <section id="video" class="section">
+
+    <div class="section-header">
+      <h2>🎥 Video Tutorial Budidaya Padi</h2>
+      <p>
+        Kumpulan video pembelajaran budidaya padi, pemupukan organik,
+        dan teknologi pertanian modern.
+      </p>
+    </div>
+
+    <div class="video-grid">
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/atjTQOn-mlk?rel=0" title="Tutorial Pupuk Organik" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+        </iframe>
+
+        <div class="video-info">
+          <h3>🌱 Pupuk Organik untuk Padi</h3>
+          <p>
+            Tutorial pembuatan dan penggunaan pupuk organik untuk meningkatkan
+            kesuburan tanah dan produktivitas tanaman padi.
+          </p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/IpAHHiaqGT8" title="Pupuk Cair Organik" allowfullscreen="">
+        </iframe>
+
+        <div class="video-info">
+          <h3>🧪 Pupuk Cair Organik</h3>
+          <p>
+            Cara membuat pupuk cair organik sederhana yang dapat digunakan
+            untuk budidaya padi secara berkelanjutan.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SUMBER ================= -->
+  <section id="sumber" class="section">
+
+    <h2>Sumber Referensi</h2>
+
+    <div class="reference-grid">
+
+      <div class="reference-card">
+        <h3>Kementerian Pertanian RI</h3>
+        <p>www.pertanian.go.id</p>
+      </div>
+
+      <div class="reference-card">
+        <h3>Balai Besar Penelitian Tanaman Padi</h3>
+        <p>bbpadi.litbang.pertanian.go.id</p>
+      </div>
+
+      <div class="reference-card">
+        <h3>FAO</h3>
+        <p>www.fao.org</p>
+      </div>
+
+      <div class="reference-card">
+        <h3>IRRI</h3>
+        <p>www.irri.org</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= AI CHAT ================= -->
+  <div class="ai-floating-btn" onclick="openAI()">
+    <i class="fas fa-robot"></i>
+  </div>
+
+  <div class="ai-modal" id="aiModal">
+
+    <div class="ai-content">
+
+      <div class="ai-header">
+        <h3>🌾 Penyuluh AI</h3>
+        <button onclick="closeAI()">✕</button>
+      </div>
+
+      <div id="chatMessages" class="chat-messages">
+
+        <div class="bot-message">
+          Halo, saya Penyuluh AI. Silakan tanyakan tentang pupuk,
+          benih, wereng, panen, legowo, dan budidaya padi.
+        </div>
+
+      </div>
+
+      <div class="chat-input">
+
+        <input type="text" id="userQuestion" placeholder="Tulis pertanyaan...">
+
+        <button onclick="sendQuestion()">
+          Kirim
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h2>PadiTani</h2>
+        <p>Platform Digital Budidaya Padi Modern berbasis teknologi dan informasi pertanian berkelanjutan.</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Credit -->
+      <div class="footer-credit">
+        <h3>Dikembangkan Oleh</h3>
+        <h2 class="name">Aisyah Nuraini Nugrahaning Dwi</h2>
+
+        <p>
+          Mahasiswa Program Studi <br>
+          <strong>Penyuluhan Pertanian Berkelanjutan</strong>
+        </p>
+
+        <p>
+          Politeknik Pembangunan Pertanian<br>
+          Yogyakarta–Magelang
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 PadiTani — All Rights Reserved</p>
+    </div>
+
+  </footer>
+  <script>
+    function hitungKebutuhan() {
+      const luas = parseFloat(document.getElementById("luasLahan").value);
+      const hasil = document.getElementById("hasilKalkulator");
+
+      if (isNaN(luas) || luas <= 0) {
+        hasil.innerHTML = "⚠️ Masukkan luas lahan yang valid!";
+        return;
+      }
+
+      // ===== KONSTANTA (PADI) =====
+      const benihPerHa = 25; // kg/ha
+      const pupukOrganik = 3000; // kg/ha (3 ton rata-rata)
+      const urea = 150; // kg/ha total
+      const npk = 300; // kg/ha total
+
+      // ===== HITUNG =====
+      const benih = luas * benihPerHa;
+      const organik = luas * pupukOrganik;
+      const ureaTotal = luas * urea;
+      const npkTotal = luas * npk;
+
+      // ===== OUTPUT =====
+      hasil.innerHTML = `
+    🌾 <b>Hasil Perhitungan (${luas} Ha)</b><br><br>
+
+    🌱 Benih: <b>${benih.toFixed(1)} kg</b><br>
+    🌿 Pupuk Organik: <b>${(organik/1000).toFixed(2)} ton</b><br>
+    🧪 Urea: <b>${ureaTotal.toFixed(1)} kg</b><br>
+    🧪 NPK: <b>${npkTotal.toFixed(1)} kg</b><br><br>
+
+    📌 Estimasi ini berdasarkan standar umum budidaya padi modern.
+  `;
+    }
+  </script>
+  <script>
+    function openAI() {
+      document.getElementById("aiModal").style.display = "flex";
+    }
+
+    function closeAI() {
+      document.getElementById("aiModal").style.display = "none";
+    }
+
+    function sendQuestion() {
+      const input = document.getElementById("userQuestion");
+      const chat = document.getElementById("chatMessages");
+
+      const text = input.value.trim();
+
+      if (text === "") {
+        return;
+      }
+
+      // tampilkan pesan user
+      chat.innerHTML += `
+    <div class="user-message">${text}</div>
+  `;
+
+      // respon AI sederhana (rule-based)
+      let response = getAIResponse(text.toLowerCase());
+
+      setTimeout(() => {
+        chat.innerHTML += `
+      <div class="bot-message">${response}</div>
+    `;
+        chat.scrollTop = chat.scrollHeight;
+      }, 500);
+
+      input.value = "";
+    }
+
+    // ================= AI LOGIC SEDERHANA =================
+    function getAIResponse(q) {
+
+      if (q.includes("urea")) {
+        return "🌾 Urea berfungsi sebagai sumber nitrogen untuk pertumbuhan daun padi.";
+      }
+
+      if (q.includes("wereng")) {
+        return "🐛 Wereng dapat dikendalikan dengan PHT seperti Beauveria bassiana dan musuh alami.";
+      }
+
+      if (q.includes("legowo")) {
+        return "🌱 Jajar Legowo meningkatkan cahaya dan hasil produksi padi.";
+      }
+
+      if (q.includes("pupuk")) {
+        return "🧪 Gunakan pupuk berimbang: organik + NPK + urea sesuai fase tanaman.";
+      }
+
+      if (q.includes("panen")) {
+        return "🌾 Panen dilakukan saat 90–95% malai menguning dengan kadar air 20–25%.";
+      }
+
+      return "🤖 Maaf, saya masih belajar. Coba tanya tentang pupuk, wereng, legowo, atau panen.";
+    }
+
+    // ENTER untuk kirim
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Enter") {
+        sendQuestion();
+      }
+    });
+  </script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navMenu");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
