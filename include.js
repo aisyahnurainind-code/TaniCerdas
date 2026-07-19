@@ -30,11 +30,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadComponent("calculator", "calculator.html");
 
+    await loadComponent("calculatorcabe", "calculatorcabe.html");
+
     await loadComponent("contact", "contact.html");
 
     await loadComponent("pemupukan", "pemupukan.html");
 
-    await loadComponent("pemupukancabe", "pemupukan.html");
+    await loadComponent("pemupukancabe", "pemupukancabe.html");
+
+    await loadComponent("harga", "harga.html");
+
+    await loadComponent("hargacabe", "hargacabe.html");
 
     await loadComponent("sumber", "sumber.html");
 

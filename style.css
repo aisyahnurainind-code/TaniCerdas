@@ -1625,31 +1625,232 @@ SECTION
 CALCULATOR
 ===========================*/
 
-.calculator-box {
-    max-width: 600px;
-    margin: auto;
-    background: white;
+/* ======================================================
+   KALKULATOR PADI & CABAI
+====================================================== */
+
+.calculator {
+    padding: 90px 0;
+    background:
+        radial-gradient(circle at top left, #e8f5e9 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #f1f8e9 0%, transparent 30%),
+        linear-gradient(180deg, #f8fff8 0%, #eef8ee 100%);
+}
+
+/* ================= CARD ================= */
+
+.calculator .card {
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+    transition: .35s ease;
+}
+
+.calculator .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .15);
+}
+
+/* ================= HEADER ================= */
+
+#kalkulator-padi .card-header,
+#kalkulator-cabai .card-header {
+    background: linear-gradient(135deg, #2e7d32, #43a047) !important;
+    border: none;
+    padding: 35px 25px;
+}
+
+.calculator .card-header h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.calculator .card-header p {
+    margin: 0;
+    opacity: .95;
+    font-size: .95rem;
+}
+
+/* ================= BODY ================= */
+
+.calculator .card-body {
     padding: 35px;
+}
+
+/* ================= LABEL ================= */
+
+.calculator .form-label {
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* ================= INPUT ================= */
+
+.calculator .input-group {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.calculator .input-group-text {
+    background: #fff;
+    border: none;
+    color: #2e7d32;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.calculator .form-control {
+    border: none;
+    height: 58px;
+    font-size: 16px;
+    box-shadow: none !important;
+}
+
+.calculator .form-control:focus {
+    background: #fff;
+}
+
+/* ================= BUTTON ================= */
+
+.calculator .btn {
+    height: 58px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    transition: .3s ease;
+}
+
+.calculator .btn:hover {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(46, 125, 50, .25);
+}
+
+/* ================= HASIL ================= */
+
+#hasilKalkulatorPadi,
+#hasilKalkulatorCabai {
+    margin-top: 30px;
+    animation: fadeUp .5s ease;
+}
+
+#hasilKalkulatorPadi .alert,
+#hasilKalkulatorCabai .alert {
+    border: none;
     border-radius: 20px;
+    background: #fff;
     box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 }
 
-.calculator-box input {
-    width: 100%;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 12px;
-    border: 1px solid #ccc;
+/* ================= KOTAK HASIL ================= */
+
+#hasilKalkulatorPadi .border,
+#hasilKalkulatorCabai .border {
+    border: none !important;
+    border-radius: 18px !important;
+    background: linear-gradient(180deg, #ffffff, #f6fbf6);
+    padding: 25px;
+    transition: .3s;
 }
 
-.calculator-box button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    background: #28a745;
-    color: white;
-    border-radius: 12px;
-    cursor: pointer;
+#hasilKalkulatorPadi .border:hover,
+#hasilKalkulatorCabai .border:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+}
+
+#hasilKalkulatorPadi h6,
+#hasilKalkulatorCabai h6 {
+    color: #666;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#hasilKalkulatorPadi h4,
+#hasilKalkulatorCabai h4 {
+    color: #2e7d32;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* ================= ANIMASI ================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .calculator .card-body {
+        padding: 30px;
+    }
+
+    .calculator .card-header h2 {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .calculator {
+        padding: 60px 15px;
+    }
+
+    .calculator .card {
+        border-radius: 18px;
+    }
+
+    .calculator .card-header {
+        padding: 25px 20px;
+    }
+
+    .calculator .card-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .calculator .card-header p {
+        font-size: .9rem;
+    }
+
+    .calculator .card-body {
+        padding: 20px;
+    }
+
+    .calculator .btn {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    #hasilKalkulatorPadi h4,
+    #hasilKalkulatorCabai h4 {
+        font-size: 22px;
+    }
+
 }
 
 /*==========================
@@ -1701,163 +1902,566 @@ TABLE
     }
 }
 
-/* ==========================
-   HARGA PASAR KOMODITAS
-========================== */
+/* =====================================================
+   HARGA PASAR KOMODITAS PADI
+===================================================== */
 
 .market-section {
-    background: linear-gradient(135deg, #f8fff6, #eef8ee);
-    padding: 80px 8%;
+
+    background: linear-gradient(180deg,
+            #f8fff8,
+            #edf8ed);
+
+    padding: 90px 0;
+
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
 
-.section-header h2 {
-    font-size: 2rem;
-    color: #2e7d32;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
+/* ================= HEADER ================= */
 
-.section-header h2 i {
-    color: #43a047;
-    margin-right: 8px;
-}
+.market-badge {
 
-.section-header p {
-    color: #666;
-    max-width: 650px;
-    margin: auto;
-    line-height: 1.7;
-    font-size: 16px;
-}
-
-/* GRID */
-
-.price-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 30px;
-}
-
-/* CARD */
-
-.price-card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
-    transition: .35s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.price-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg, #2e7d32, #66bb6a);
-}
-
-.price-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, .15);
-}
-
-/* ICON */
-
-.price-icon {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    background: #e8f5e9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 34px;
-}
-
-/* JUDUL */
-
-.price-card h3 {
-    font-size: 20px;
-    color: #2e7d32;
-    margin-bottom: 15px;
-}
-
-/* HARGA */
-
-.price-card h1 {
-    font-size: 32px;
-    color: #222;
-    margin-bottom: 18px;
-    font-weight: bold;
-}
-
-/* STATUS */
-
-.price-up,
-.price-down,
-.price-stable {
     display: inline-block;
-    padding: 8px 18px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
 
-.price-up {
     background: #e8f5e9;
+
     color: #2e7d32;
+
+    padding: 8px 20px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
 }
 
-.price-down {
-    background: #ffebee;
-    color: #d32f2f;
+
+
+.market-title {
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    color: #2e7d32;
+
+    margin-bottom: 15px;
+
 }
 
-.price-stable {
-    background: #eceff1;
-    color: #455a64;
+
+
+.market-desc {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
 }
 
-/* UPDATE */
 
-.price-card small {
-    display: block;
+
+/* ================= GRAFIK ================= */
+
+
+.chart-box {
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    height: 450px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+
+
+.chart-box:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(46, 125, 50, .15);
+
+}
+
+
+
+.chart-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.chart-header h4 {
+
+    margin: 0;
+
+    color: #2e7d32;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+}
+
+
+
+.chart-header small {
+
     color: #777;
-    font-size: 13px;
+
 }
 
-/* RESPONSIVE */
 
-@media (max-width:768px) {
+
+.live-status {
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+
+.chart-area {
+
+    position: relative;
+
+    height: 330px;
+
+}
+
+
+
+#priceChart {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+}
+
+
+
+
+
+/* ================= CARD HARGA ================= */
+
+
+.price-wrapper {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+
+.price-box {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    transition: .3s;
+
+    border: 1px solid rgba(46, 125, 50, .08);
+
+}
+
+
+
+.price-box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 25px rgba(46, 125, 50, .15);
+
+}
+
+
+
+.icon-box {
+
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e8f5e9;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+
+}
+
+
+
+.price-box p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+
+.price-box h3 {
+
+    margin: 5px 0;
+
+    color: #2e7d32;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+}
+
+
+
+.price-box h3 small {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+
+.up {
+
+    color: #16a34a;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+.down {
+
+    color: #dc2626;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+.stable {
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+
+/* Laptop */
+
+@media(max-width:1200px) {
+
+
+    .market-title {
+
+        font-size: 35px;
+
+    }
+
+
+    .chart-box {
+
+        height: 420px;
+
+    }
+
+
+    .chart-area {
+
+        height: 300px;
+
+    }
+
+
+}
+
+
+
+/* Tablet */
+
+@media(max-width:992px) {
+
 
     .market-section {
-        padding: 60px 25px;
+
+        padding: 70px 0;
+
     }
 
-    .section-header h2 {
+
+    .market-title {
+
+        font-size: 32px;
+
+    }
+
+
+    .chart-box {
+
+        height: 400px;
+
+    }
+
+
+    .price-wrapper {
+
+        margin-top: 10px;
+
+    }
+
+
+}
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+
+    .market-title {
+
         font-size: 28px;
+
     }
 
-    .price-card {
-        padding: 25px;
+
+    .market-desc {
+
+        font-size: 14px;
+
+        padding: 0 15px;
+
     }
 
-    .price-card h1 {
-        font-size: 28px;
+
+
+    .chart-box {
+
+        padding: 18px;
+
+        height: 360px;
+
+        border-radius: 18px;
+
     }
+
+
+
+    .chart-header h4 {
+
+        font-size: 18px;
+
+    }
+
+
+
+    .live-status {
+
+        padding: 6px 12px;
+
+        font-size: 12px;
+
+    }
+
+
+
+    .chart-area {
+
+        height: 260px;
+
+    }
+
+
+
+    .price-box {
+
+        padding: 16px;
+
+        border-radius: 16px;
+
+    }
+
+
+
+    .icon-box {
+
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 26px;
+
+    }
+
+
+
+    .price-box h3 {
+
+        font-size: 21px;
+
+    }
+
+
+}
+
+
+
+
+
+/* HP kecil */
+
+@media(max-width:480px) {
+
+
+    .market-section {
+
+        padding: 50px 0;
+
+    }
+
+
+
+    .market-title {
+
+        font-size: 24px;
+
+    }
+
+
+
+    .chart-box {
+
+        height: 320px;
+
+    }
+
+
+
+    .chart-area {
+
+        height: 220px;
+
+    }
+
+
+
+    .chart-header {
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+
+
+    .price-box {
+
+        gap: 12px;
+
+    }
+
+
+
+    .price-box p {
+
+        font-size: 13px;
+
+    }
+
+
+
+    .price-box h3 {
+
+        font-size: 19px;
+
+    }
+
 
 }
 
@@ -3242,6 +3846,7 @@ RESPONSIVE
    JURNAL & ARTIKEL
 ===================================================== */
 .journal-area {
+    margin-top: 5%;
     background: #f8faf8;
 }
 
@@ -3440,186 +4045,227 @@ RESPONSIVE
 
 }
 
-/* ==================================
-   PEMUPUKAN SECTION
-================================== */
-
+/* ==========================================
+   SECTION PEMUPUKAN
+========================================== */
 
 #pemupukan {
-
-    background:
-        linear-gradient(180deg,
-            #f8fff8,
-            #edf7ed);
-
+    padding: 80px 0;
+    background: linear-gradient(180deg, #f8fff8, #eef8ee);
 }
 
-
+/* Judul */
 
 #pemupukan h2 {
-
-    font-size: 40px;
-
     color: #2e7d32;
-
-    letter-spacing: .5px;
-
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
 }
 
+#pemupukan p {
+    color: #666;
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.7;
+}
 
-
-
-
-/* Card Table */
+/* Card */
 
 .fertilizer-card {
-
-
-    background: white;
-
-    border-radius: 25px;
-
-    overflow: hidden;
-
+    max-width: 850px;
+    margin: 40px auto 0;
     border: none;
-
-
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    transition: .35s;
 }
 
-
-
-
+.fertilizer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(46, 125, 50, .15);
+}
 
 /* Table */
 
 .fertilizer-table {
+    margin: 0;
+}
 
+.fertilizer-table thead th {
 
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
     font-size: 16px;
+    font-weight: 700;
+    border: none;
 
 }
 
-
-
-.fertilizer-table thead {
-
-
-    background:
-
-        linear-gradient(135deg,
-            #2e7d32,
-            #66bb6a);
-
-
-    color: white;
-
-
-}
-
-
-
-.fertilizer-table th {
-
-
-    padding: 20px;
+.fertilizer-table tbody td {
 
     text-align: center;
-
-    font-size: 17px;
-
-
-}
-
-
-
-
-
-.fertilizer-table td {
-
-
-    padding: 20px;
-
-    text-align: center;
-
-    color: #444;
-
+    vertical-align: middle;
+    padding: 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ececec;
 
 }
-
-
-
-
-
-/* Hover Row */
 
 .fertilizer-table tbody tr {
-
-
-    transition: .3s ease;
-
-
+    transition: .3s;
 }
-
-
 
 .fertilizer-table tbody tr:hover {
-
-
-    background: #f1fff1;
-
-    transform: scale(1.01);
-
-
+    background: #f6fff6;
 }
-
-
-
-
 
 /* Badge */
 
-.badge {
+.fertilizer-table .badge {
 
-
-    padding: 10px 15px;
-
-    border-radius: 20px;
-
+    padding: 8px 14px;
     font-size: 13px;
-
+    border-radius: 30px;
+    font-weight: 600;
 
 }
 
+/* Strong */
 
+.fertilizer-table strong {
+    color: #2e7d32;
+    font-size: 15px;
+}
 
+/* Zebra */
 
+.fertilizer-table tbody tr:nth-child(even) {
+    background: #fcfffc;
+}
 
-/* Responsive */
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
-@media(max-width:768px) {
+/* Laptop */
 
+@media (max-width:992px) {
+
+    #pemupukan {
+        padding: 70px 20px;
+    }
+
+    .fertilizer-card {
+        max-width: 100%;
+    }
 
     #pemupukan h2 {
-
-        font-size: 30px;
-
+        font-size: 2rem;
     }
 
+}
+
+/* Tablet */
+
+@media (max-width:768px) {
+
+    #pemupukan {
+        padding: 60px 15px;
+    }
+
+    #pemupukan h2 {
+        font-size: 1.8rem;
+    }
+
+    #pemupukan p {
+        font-size: 15px;
+    }
+
+    .fertilizer-table thead th {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .fertilizer-table tbody td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .fertilizer-table .badge {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:576px) {
+
+    #pemupukan {
+        padding: 50px 10px;
+    }
+
+    #pemupukan h2 {
+        font-size: 1.5rem;
+    }
+
+    #pemupukan p {
+        font-size: 14px;
+    }
+
+    .fertilizer-card {
+        border-radius: 14px;
+        margin-top: 25px;
+    }
+
+    .table-responsive {
+        border-radius: 14px;
+    }
 
     .fertilizer-table {
-
-        font-size: 14px;
-
+        min-width: 500px;
     }
 
-
-    .fertilizer-table td,
-    .fertilizer-table th {
-
-        padding: 15px 10px;
-
+    .fertilizer-table thead th {
+        font-size: 13px;
+        padding: 10px;
+        white-space: nowrap;
     }
 
+    .fertilizer-table tbody td {
+        font-size: 13px;
+        padding: 10px;
+        white-space: nowrap;
+    }
 
+    .fertilizer-table .badge {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    .fertilizer-table strong {
+        font-size: 13px;
+    }
+
+}
+
+/* Extra Small */
+
+@media (max-width:360px) {
+
+    #pemupukan h2 {
+        font-size: 1.3rem;
+    }
+
+    #pemupukan p {
+        font-size: 13px;
+    }
 
 }
