@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 throw new Error(`Gagal memuat ${file}`);
             }
 
-            document.getElementById(id).innerHTML = await response.text();
+            document.getElementById(id).innerHTML =
+                await response.text();
 
         } catch (error) {
 
@@ -20,13 +21,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
 
-
-    // Memanggil komponen halaman
     await loadComponent("header", "header.html");
 
     await loadComponent("budidayapadi", "budidayapadi.html");
 
     await loadComponent("budidayacabe", "budidayacabe.html");
+
+    await loadComponent("ai", "ai.html");
+
+    await loadComponent("aicabe", "aicabe.html");
 
     await loadComponent("calculator", "calculator.html");
 
@@ -46,5 +49,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadComponent("footer", "footer.html");
 
+
+    /* ====== TAMBAHKAN INI ====== */
+
+    document.dispatchEvent(
+
+        new Event("componentsLoaded")
+
+    );
 
 });

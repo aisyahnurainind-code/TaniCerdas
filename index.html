@@ -43,7 +43,7 @@ pertanian modern
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-page="padi">
 
   <!-- ================= HEADER ================= -->
   <div id="header"></div>
@@ -326,39 +326,7 @@ pertanian modern
   </section>
 
   <!-- ================= AI CHAT ================= -->
-  <div class="ai-floating-btn" onclick="openAI()">
-    <i class="fas fa-robot"></i>
-  </div>
-
-  <div class="ai-modal" id="aiModal">
-
-    <div class="ai-content">
-
-      <div class="ai-header">
-        <h3>🌾 Penyuluh AI</h3>
-        <button onclick="closeAI()">✕</button>
-      </div>
-
-      <div id="chatMessages" class="chat-messages">
-
-        <div class="bot-message">
-          Halo, saya Penyuluh AI. Silakan tanyakan tentang pupuk,
-          benih, wereng, panen, legowo, dan budidaya padi.
-        </div>
-
-      </div>
-
-      <div class="chat-input">
-
-        <input type="text" id="userQuestion" placeholder="Tulis pertanyaan...">
-
-        <button onclick="sendQuestion()">
-          Kirim
-        </button>
-
-      </div>
-
-    </div>
+  <section id="ai"></section>
 
   </div>
   <div id="contact"></div>
@@ -367,6 +335,7 @@ pertanian modern
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./include.js"></script>
   <script src="./script.js"></script>
+  <script src="ai.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

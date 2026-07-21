@@ -1,0 +1,203 @@
+<!-- =======================================================
+     TaniCerdas AI - Penyuluh Padi
+======================================================== -->
+
+<!-- Floating Button -->
+<div class="tc-ai-button" onclick="openAI()">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- Modal -->
+<div class="tc-ai-overlay" id="aiModal">
+
+  <div class="tc-ai-container">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="tc-ai-header">
+
+      <div class="tc-ai-profile">
+
+        <div class="tc-ai-avatar">
+          🌾
+        </div>
+
+        <div>
+
+          <h3>TaniCerdas AI</h3>
+
+          <span>
+            Penyuluh Digital Budidaya Padi
+          </span>
+
+        </div>
+
+      </div>
+
+      <button class="tc-close-btn" onclick="closeAI()">
+
+        <i class="fas fa-times"></i>
+
+      </button>
+
+    </div>
+
+    <!-- ================= CHAT ================= -->
+
+    <div class="tc-chat-body" id="chatMessages">
+
+      <!-- AI Welcome -->
+
+      <div class="ai-message">
+
+        <div class="avatar">
+          🌾
+        </div>
+
+        <div class="bubble">
+
+          <h4>
+            Selamat Datang 👋
+          </h4>
+
+          <p>
+            Halo, saya
+            <strong>TaniCerdas AI</strong>,
+            asisten digital yang siap membantu Anda mengenai
+            <strong>budidaya padi modern.</strong>
+          </p>
+
+          <p>
+            Saya dapat membantu menjawab pertanyaan mengenai:
+          </p>
+
+          <ul>
+
+            <li>🌱 Persiapan lahan</li>
+
+            <li>🌾 Pemilihan benih</li>
+
+            <li>🌿 Persemaian</li>
+
+            <li>🚜 Penanaman</li>
+
+            <li>💧 Pengairan</li>
+
+            <li>🌱 Pemupukan</li>
+
+            <li>🐛 Wereng batang coklat</li>
+
+            <li>🍂 Penyakit blas</li>
+
+            <li>🌾 Jajar Legowo</li>
+
+            <li>🌾 Panen & Pascapanen</li>
+
+          </ul>
+
+          <p>
+
+            Silakan pilih pertanyaan di bawah
+            atau ketik pertanyaan Anda.
+
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- ================= QUICK QUESTION ================= -->
+
+      <div class="quick-question">
+
+        <button onclick="quickQuestion('Bagaimana cara menanam padi?')">
+
+          🌾 Cara Menanam
+
+        </button>
+
+        <button onclick="quickQuestion('Bagaimana cara memilih benih padi?')">
+
+          🌱 Benih
+
+        </button>
+
+        <button onclick="quickQuestion('Bagaimana pemupukan padi?')">
+
+          🌿 Pemupukan
+
+        </button>
+
+        <button onclick="quickQuestion('Bagaimana mengatasi wereng?')">
+
+          🐛 Wereng
+
+        </button>
+
+        <button onclick="quickQuestion('Apa itu sistem Jajar Legowo?')">
+
+          🚜 Jajar Legowo
+
+        </button>
+
+        <button onclick="quickQuestion('Bagaimana mengatasi penyakit blas?')">
+
+          🍂 Penyakit Blas
+
+        </button>
+
+        <button onclick="quickQuestion('Kapan waktu panen padi?')">
+
+          🌾 Panen
+
+        </button>
+
+        <button onclick="quickQuestion('Bagaimana pengairan padi?')">
+
+          💧 Irigasi
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- ================= TYPING ================= -->
+
+    <div class="typing-box" id="typingBox" style="display:none;">
+
+      <div class="avatar">
+
+        🌾
+
+      </div>
+
+      <div class="typing">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+    </div>
+
+    <!-- ================= INPUT ================= -->
+
+    <div class="tc-input-area">
+
+      <input type="text" id="userQuestion" placeholder="Tulis pertanyaan tentang budidaya padi..." autocomplete="off">
+
+      <button onclick="sendQuestion()">
+
+        <i class="fas fa-paper-plane"></i>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
