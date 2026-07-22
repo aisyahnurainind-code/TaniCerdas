@@ -1625,6 +1625,13 @@ SECTION
 CALCULATOR
 ===========================*/
 
+<<<<<<< HEAD
+=======
+/* ======================================================
+   KALKULATOR PADI & CABAI
+====================================================== */
+
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 .calculator {
     padding: 90px 0;
     background:
@@ -1898,6 +1905,7 @@ TABLE
     }
 }
 
+<<<<<<< HEAD
 
 /* =====================================================
    MARKET UPDATE SECTION
@@ -2358,19 +2366,68 @@ TABLE
 .turun {
 
     color: #dc2626;
+=======
+/* =====================================================
+   HARGA PASAR KOMODITAS PADI
+===================================================== */
+
+.market-section {
+
+    background: linear-gradient(180deg,
+            #f8fff8,
+            #edf8ed);
+
+    padding: 90px 0;
+
+}
+
+
+/* ================= HEADER ================= */
+
+.market-badge {
+
+    display: inline-block;
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    padding: 8px 20px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
 }
 
 
 
+<<<<<<< HEAD
 .stabil {
 
     color: #d97706;
+=======
+.market-title {
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    color: #2e7d32;
+
+    margin-bottom: 15px;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
 }
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -2393,11 +2450,25 @@ TABLE
 
     margin-top: 15px;
 
+=======
+.market-desc {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
 }
 
 
 
+<<<<<<< HEAD
 .market-dot {
 
 
@@ -2418,10 +2489,78 @@ TABLE
     cursor: pointer;
 
 
+=======
+/* ================= GRAFIK ================= */
+
+
+.chart-box {
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    height: 450px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
 }
 
 
 
+.chart-box:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(46, 125, 50, .15);
+
+}
+
+
+
+.chart-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.chart-header h4 {
+
+    margin: 0;
+
+    color: #2e7d32;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+}
+
+
+
+.chart-header small {
+
+    color: #777;
+
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
+}
+
+
+
+<<<<<<< HEAD
 .market-dot.active {
 
 
@@ -2433,6 +2572,41 @@ TABLE
 
     background: #2e7d32;
 
+=======
+.live-status {
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+
+.chart-area {
+
+    position: relative;
+
+    height: 330px;
+
+}
+
+
+
+#priceChart {
+
+    width: 100% !important;
+
+    height: 100% !important;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
 }
 
@@ -2440,6 +2614,7 @@ TABLE
 
 
 
+<<<<<<< HEAD
 
 
 /* =====================================================
@@ -2447,16 +2622,204 @@ TABLE
 ===================================================== */
 
 
+=======
+/* ================= CARD HARGA ================= */
+
+
+.price-wrapper {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+
+.price-box {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    transition: .3s;
+
+    border: 1px solid rgba(46, 125, 50, .08);
+
+}
+
+
+
+.price-box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 25px rgba(46, 125, 50, .15);
+
+}
+
+
+
+.icon-box {
+
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e8f5e9;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+
+}
+
+
+
+.price-box p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+
+.price-box h3 {
+
+    margin: 5px 0;
+
+    color: #2e7d32;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+}
+
+
+
+.price-box h3 small {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+
+.up {
+
+    color: #16a34a;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+.down {
+
+    color: #dc2626;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+.stable {
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+
+/* Laptop */
+
+@media(max-width:1200px) {
+
+
+    .market-title {
+
+        font-size: 35px;
+
+    }
+
+
+    .chart-box {
+
+        height: 420px;
+
+    }
+
+
+    .chart-area {
+
+        height: 300px;
+
+    }
+
+
+}
+
+
+
+/* Tablet */
+
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 @media(max-width:992px) {
 
 
     .market-section {
 
+<<<<<<< HEAD
         padding: 60px 0;
+=======
+        padding: 70px 0;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
     }
 
 
+<<<<<<< HEAD
 
     .market-header h2 {
 
@@ -2469,14 +2832,24 @@ TABLE
     .market-item {
 
         flex-basis: 290px;
+=======
+    .market-title {
+
+        font-size: 32px;
 
     }
 
 
+    .chart-box {
 
-    .market-card {
+        height: 400px;
 
-        height: 160px;
+    }
+
+
+    .price-wrapper {
+
+        margin-top: 10px;
 
     }
 
@@ -2487,6 +2860,112 @@ TABLE
 
 
 
+/* Mobile */
+
+@media(max-width:768px) {
+
+
+    .market-title {
+
+        font-size: 28px;
+
+    }
+
+
+    .market-desc {
+
+        font-size: 14px;
+
+        padding: 0 15px;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
+
+    }
+
+
+
+<<<<<<< HEAD
+    .market-card {
+
+        height: 160px;
+=======
+    .chart-box {
+
+        padding: 18px;
+
+        height: 360px;
+
+        border-radius: 18px;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
+
+    }
+
+
+<<<<<<< HEAD
+=======
+
+    .chart-header h4 {
+
+        font-size: 18px;
+
+    }
+
+
+
+    .live-status {
+
+        padding: 6px 12px;
+
+        font-size: 12px;
+
+    }
+
+
+
+    .chart-area {
+
+        height: 260px;
+
+    }
+
+
+
+    .price-box {
+
+        padding: 16px;
+
+        border-radius: 16px;
+
+    }
+
+
+
+    .icon-box {
+
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 26px;
+
+    }
+
+
+
+    .price-box h3 {
+
+        font-size: 21px;
+
+    }
+
+
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
+}
+
+
+
+
+
+<<<<<<< HEAD
 
 
 
@@ -2503,21 +2982,38 @@ TABLE
 
         font-size: 26px;
 
+=======
+/* HP kecil */
+
+@media(max-width:480px) {
+
+
+    .market-section {
+
+        padding: 50px 0;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
     }
 
 
 
+<<<<<<< HEAD
     .market-header p {
 
 
         font-size: 14px;
 
+=======
+    .market-title {
+
+        font-size: 24px;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
     }
 
 
 
+<<<<<<< HEAD
     .market-category button {
 
 
@@ -2526,10 +3022,51 @@ TABLE
         font-size: 13px;
 
 
+=======
+    .chart-box {
+
+        height: 320px;
+
     }
 
 
 
+    .chart-area {
+
+        height: 220px;
+
+    }
+
+
+
+    .chart-header {
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+
+
+    .price-box {
+
+        gap: 12px;
+
+    }
+
+
+
+    .price-box p {
+
+        font-size: 13px;
+
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
+    }
+
+
+
+<<<<<<< HEAD
     .market-slider {
 
 
@@ -2597,6 +3134,11 @@ TABLE
 
         font-size: 13px;
 
+=======
+    .price-box h3 {
+
+        font-size: 19px;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
     }
 
@@ -4361,10 +4903,20 @@ RESPONSIVE
 
 }
 
+<<<<<<< HEAD
 
 /* ===============================
  JOURNAL SECTION
 ================================ */
+=======
+/* =====================================================
+   JURNAL & ARTIKEL
+===================================================== */
+.journal-area {
+    margin-top: 5%;
+    background: #f8faf8;
+}
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
 
 .journal-section {
@@ -4942,6 +5494,7 @@ RESPONSIVE
 
 }
 
+<<<<<<< HEAD
 
 
 
@@ -5241,10 +5794,20 @@ RESPONSIVE
             #f8fff8,
             #ffffff);
 
+=======
+/* ==========================================
+   SECTION PEMUPUKAN
+========================================== */
+
+#pemupukan {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #f8fff8, #eef8ee);
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 }
 
+/* Judul */
 
-
+<<<<<<< HEAD
 /* Timeline */
 
 .fertilizer-timeline {
@@ -5256,9 +5819,24 @@ RESPONSIVE
 
     gap: 30px;
 
+=======
+#pemupukan h2 {
+    color: #2e7d32;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 }
 
+#pemupukan p {
+    color: #666;
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.7;
+}
 
+<<<<<<< HEAD
 
 /* Card */
 
@@ -5303,15 +5881,39 @@ RESPONSIVE
         0 15px 40px rgba(46, 125, 50, .18);
 
 
+=======
+/* Card */
+
+.fertilizer-card {
+    max-width: 850px;
+    margin: 40px auto 0;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    transition: .35s;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 }
 
+.fertilizer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(46, 125, 50, .15);
+}
 
-
-
-
+<<<<<<< HEAD
 /* Icon */
+=======
+/* Table */
 
+.fertilizer-table {
+    margin: 0;
+}
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
+.fertilizer-table thead th {
+
+<<<<<<< HEAD
 .fertilizer-icon {
 
 
@@ -5607,13 +6209,61 @@ RESPONSIVE
 
     background: #e53935;
 
+=======
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
 
 }
 
+.fertilizer-table tbody td {
 
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ececec;
 
+}
 
+.fertilizer-table tbody tr {
+    transition: .3s;
+}
 
+.fertilizer-table tbody tr:hover {
+    background: #f6fff6;
+}
+
+/* Badge */
+
+.fertilizer-table .badge {
+
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 30px;
+    font-weight: 600;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
+
+}
+
+/* Strong */
+
+.fertilizer-table strong {
+    color: #2e7d32;
+    font-size: 15px;
+}
+
+/* Zebra */
+
+.fertilizer-table tbody tr:nth-child(even) {
+    background: #fcfffc;
+}
+
+<<<<<<< HEAD
 /* Dosis cabe */
 
 
@@ -5642,17 +6292,98 @@ RESPONSIVE
 
 
 @media(max-width:768px) {
+=======
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
+/* Laptop */
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
+@media (max-width:992px) {
+
+    #pemupukan {
+        padding: 70px 20px;
+    }
+
+    .fertilizer-card {
+        max-width: 100%;
+    }
+
+<<<<<<< HEAD
     #pemupukan-cabe .section-title {
 
 
         font-size: 28px;
 
 
+=======
+    #pemupukan h2 {
+        font-size: 2rem;
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
     }
 
+}
 
+/* Tablet */
+
+@media (max-width:768px) {
+
+    #pemupukan {
+        padding: 60px 15px;
+    }
+
+    #pemupukan h2 {
+        font-size: 1.8rem;
+    }
+
+    #pemupukan p {
+        font-size: 15px;
+    }
+
+    .fertilizer-table thead th {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .fertilizer-table tbody td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .fertilizer-table .badge {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:576px) {
+
+    #pemupukan {
+        padding: 50px 10px;
+    }
+
+    #pemupukan h2 {
+        font-size: 1.5rem;
+    }
+
+    #pemupukan p {
+        font-size: 14px;
+    }
+
+    .fertilizer-card {
+        border-radius: 14px;
+        margin-top: 25px;
+    }
+
+    .table-responsive {
+        border-radius: 14px;
+    }
+
+<<<<<<< HEAD
 
     .cabe-card {
 
@@ -5662,5 +6393,45 @@ RESPONSIVE
 
     }
 
+=======
+    .fertilizer-table {
+        min-width: 500px;
+    }
+
+    .fertilizer-table thead th {
+        font-size: 13px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .fertilizer-table tbody td {
+        font-size: 13px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .fertilizer-table .badge {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    .fertilizer-table strong {
+        font-size: 13px;
+    }
+
+}
+
+/* Extra Small */
+
+@media (max-width:360px) {
+
+    #pemupukan h2 {
+        font-size: 1.3rem;
+    }
+
+    #pemupukan p {
+        font-size: 13px;
+    }
+>>>>>>> 16993edf82500ebd5834e27bf7e46fe8ff2ccb27
 
 }
